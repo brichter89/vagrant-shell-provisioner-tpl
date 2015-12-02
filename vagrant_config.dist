@@ -1,0 +1,14 @@
+$private_ip   = "192.168.100.10"
+$public_ip    = nil
+$use_nfs      = true
+$vm_name      = "ProjectName DEV"
+$hostname     = "projectname-dev"
+$vm_memory    = 1024
+$project_src  = "./"
+$project_root = "/srv/app"
+
+# Setting this to false will prevent provisioner from doing online actions such
+# as upgrading packages.
+# Attention: The initial provisioning must be online to download required
+# packages.
+$online = true
